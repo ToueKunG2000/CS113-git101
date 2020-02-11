@@ -1,0 +1,30 @@
+การนิยามฟังก์ชัน
+datatype function_name(parameter){
+	expression;
+}
+int addTen(int x){
+	x+=10;
+	return x;
+}
+การใช้Function Prototype
+datatype function_name(datatype of parameter); จะใช้ในกรณีที่นิยามฟังก์ชันไว้ด้านล่าง เช่น
+int addTen(int);
+การใช้ฟังก์ชัน scanf
+scanf("format",&variable); คือ การเก็บค่าลงในตัวแปร โดยอ้างอิงไปยัง address ของตัวแปรนั้น
+การเรียกใช้ฟังก์ชันซ้ำ (Recursion) คือ การเรียกใช้ฟังก์ชันโดยที่มีการเรียกตัวฟังก์ชันเองซ้ำภายในฟังก์ชัน
+int factorial(int num){
+	if(num == 1){
+        return 1;
+        }
+        else{
+        return num*factorial(num-1);
+        }
+}
+ตัวแปรGlobal VS ตัวแปรLocal
+Global Variable คือ ตัวแปรที่ประกาศนอกฟังก์ชัน main
+Local Variable คือ ตัวแปรที่ประกาศภายในฟังก์ชัน รวมถึงฟังก์ชัน main ด้วย ซึ่งตัวแปรเดียวกันอยู่คนละฟังก์ชัน จะมีค่าไม่เท่ากัน
+
+int x=1; <---Global Variable
+int main(){
+    int y=0; <---Local Variable
+}
