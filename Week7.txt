@@ -1,0 +1,20 @@
+การใช้คำสั่ง Command Prompt
+mkdir ชื่อไฟล์  --> การสร้างโฟลเดอร์
+dir --> ดูรายการไฟล์ใน working directory
+d: --> เปลี่ยนไดร์ฟไปยังไดร์ฟ D
+cd ชื่อไฟล์ --> การเปลี่ยน working directory ปัจจุบัน ไปยังชื่อไฟล์
+cd .. --> เปลี่ยนไปยัง working directory ก่อนหน้านั้น
+---------------------------------------------
+การใช้งานคำสั่ง git
+git --version คือ การตรวจสอบเวอร์ชั่นของ git
+git init คือ การสร้าง git repository
+touch ชื่อไฟล์.นามสกุลไฟล์ คือ การสร้างไฟล์ต่างๆ
+git status คือ การตรวจสอบสถานะไฟล์ ว่ามีการเปลี่ยนแปลง
+git add ชื่อไฟล์ คือ การเพิ่มไฟล์เข้า staging area
+git commit -m "คำบรรยาย" คือ การ commit ไฟล์ เพื่อเก็บ checkpoint ของไฟล์
+git log --all --decorate --oneline --graph คือ การดู checkpoint ทั้งหมด
+git remote add <ชื่อ remote> <gir url> คือ การเชื่อม local repository กับ github
+git remote remove <ชื่อ remote> คือ การลบ remote เก่าออก
+git push -u <ชื่อ remote> master คือ ส่งไฟล์และประวัติไปเก็บที่ github
+git checkout <commit-id> ชื่อไฟล์  คือ การย้อนกลับไปยัง checkpoint ที่ต้องการ สามารถใช้เฉพาะไฟล์ที่ต้องการจะย้อนกลับก็ได้
+git clone <git-url> คือ การ copy ไฟล์ที่เราเก็บไว้ที่ github ลงในเครื่องเรา
