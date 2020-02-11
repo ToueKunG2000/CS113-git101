@@ -1,0 +1,26 @@
+การประกาศตัวแปรประเภท Array
+int number[] = {1,2,3}; คือ การประกาศตัวแปรที่สามารถเก็บค่าจำนวนเต็มได้หลายค่า โดยเข้าถึงผ่าน index
+char str[] = "Hello"; คือ การประกาศตัวแปรที่สามารถเก็บค่าตัวอักษรได้มากกว่า 1 อักขระ โดยเข้าถึงผ่าน index
+
+การประกาศตัวแปรประเภท Pointer
+datatype *variable; คือ ตัวแปรที่เก็บ Address
+
+ตัวแปร Pointer กับตัวแปร
+int *ptr;
+ptr = &x; คือ การให้ ptr เก็บข้อมูล address ของตัวแปร x
+
+ตัวแปร Pointer กับ Array int
+int *arrPtr;
+arrPtr = number; คือ การให้ arrPtr เก็บข้อมูล address ของ Array number ซึ่งคือ ตำแหน่งแรกบน Array
+printf("%d",*arrPtr); คือ การให้แสดงค่าของ arrPtr ที่เก็บ address ของ number[0] คือ เลข 1
+arrPtr += 1; คือ การที่ให้ arrPtr เคลื่อนไปที่ index ถัดไป 1 ตำแหน่ง
+printf("%d",*arrPtr); คือ การให้แสดงค่าของ arrPtr ที่เก็บ address ของ number[1] คือ เลข 2
+printf("%p",&number); คือ การแสดงค่าของ address ของตัวแปร number
+
+ตัวแปร Pointer กับ Array char
+char *strPtr;
+strPtr = str; คือ การให้ strPtr เก็บข้อมูล address ของ Array char ซึ่งคือ ตัวอักษรแรกของ Array
+printf("%c",*strPtr); คือ การให้แสดงค่าของ strPtr ที่เก็บ address ของ str[0] คือ H
+strPtr += 1; คือ การที่ให้ strPtr เคลื่อนไปที่ตัวอักษร ถัดไป 1 ตำแหน่ง
+printf("%c",*strPtr); คือ การให้แสดงค่าของ strPtr ที่เก็บ address ของ str[1] คือ e
+printf("%p",&str); คือ การแสดงค่าของ address ของตัวแปร str
