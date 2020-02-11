@@ -1,0 +1,18 @@
+การ Pass by value คือ การ copy ค่าส่งเข้าไปในฟังก์ชัน ซึ่งจะไม่มีผลกับค่าที่ส่งไปให้
+int addTen(int x){
+    x=+10;
+}
+int main(){
+    int x = 5;
+    addTen(x);
+    printf("%d",x); จะแสดงค่า x คือ 5
+}
+Pass by reference ในภาษาซี คือ การใช้ pointer ในการอ้างอิงถึงตัวแปร เพื่อสามารถเปลี่ยนค่าได้จาก address
+int addTen(int *x){ คือการประกาศว่า รับค่าของ address ตัวแปรนั้นๆ
+    *x=+10;
+}
+int main(){
+    int x = 5;
+    addTen(&x);
+    printf("%d",x); จะแสดงค่า x คือ 15
+}
